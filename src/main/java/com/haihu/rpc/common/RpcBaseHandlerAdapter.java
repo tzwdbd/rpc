@@ -21,7 +21,7 @@ import org.apache.commons.logging.LogFactory;
 public class RpcBaseHandlerAdapter extends ChannelInboundHandlerAdapter {
 	private static Log log = LogFactory.getLog(RpcBaseHandlerAdapter.class);
 	protected static Map<String, RpcResponseObj> msgRespMap = new ConcurrentHashMap<String, RpcResponseObj>();
-	protected static ExecutorService fixedThreadPool = Executors.newFixedThreadPool(1);
+	protected static ExecutorService fixedThreadPool = Executors.newFixedThreadPool(8);
 	protected static List<FutureTaskImpl<Object>> futureList = new ArrayList<FutureTaskImpl<Object>>();
 	protected static ScheduledExecutorService executorService = null;
 	protected static List<RpcInvoker> invokerList = new Vector<RpcInvoker>();
