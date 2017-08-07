@@ -4,7 +4,7 @@
 
 	<groupId>com.haihu</groupId>
 	<artifactId>rpc</artifactId>
-	<version>1.0.1068</version>
+	<version>1.1.0</version>
 	<packaging>jar</packaging>
 
 	<distributionManagement>
